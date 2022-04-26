@@ -1,4 +1,4 @@
-# USAGE
+# README
 
 This is  my first personal project that I made as a gift.
 
