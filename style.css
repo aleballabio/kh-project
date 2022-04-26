@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Kingdom Hearts";
+    src: url("fonts/KH2_ALL_MENU_I.TTF");
+}
+
+html {
+    font-family: Kingdom Hearts;
+}
+
+body {
+    background-color: white;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    min-width: 1000px;
+    overflow: hidden;
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-title {
+    text-align: center;
+    width: 500px;
+    height: 280px;
+    position: relative;
+    left: 15%;
+    top: 8%;
+}
+
+.container-title .logo {
+    position: absolute;
+    width: 175px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 88888;
+
+}
+
+.container-title .disney {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, -50%);
+    z-index: 88888;
+}
+
+.container-title .text {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    top: 130px;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    width: 50vw;
+    min-width: 500px;
+    margin-left: 3.8rem;
+}
+
+.container-two {
+    position: relative;
+    top: 125px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    flex-direction: column;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.first-choice .image {
+    flex-basis: calc(100% / 3 - 2rem);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-choice .image .img-choice {
+    width: 100%;
+}
+
+.cursor {
+    margin-top: 20px;
+    visibility: hidden;
+    
+}
+
+.image:hover .cursor {
+    transition: transform 2s;
+    visibility: visible;
+    display: inline-block;
+    animation-name: jump;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(-3px);
+    }
+    
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(109deg, #044690, #8af4f4, #f4f4bd, #e6a6c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 800% 800%;
+    -webkit-animation: gradient 17s ease infinite;
+    -moz-animation: gradient 17s ease infinite;
+    animation: gradient 17s ease infinite;
+    margin-bottom: 2rem;
+    font-size: 1.4rem !important;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+        
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+    }
+}
+
+.choice-final {
+    padding-top: 1.5rem;
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-final .cursor-two {
+    visibility: hidden;
+    padding-top: .5rem;
+    margin-right: 2rem;
+}
+
+
+.choice-final:hover .cursor-two {
+    transition: transform 2s;
+    visibility: visible;
+    transform: translateX(20px);
+    animation-name: sideside;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes sideside {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(238, 191, 36);
+}
+
+.container-two.link {
+    left: 55px;
+}
+
+.gold {
+    width: 170px;
+    margin-bottom: 3rem;
+    animation-name: jump;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}

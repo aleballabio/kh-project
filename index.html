@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buon 6° Mesiversario</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio autoplay loop muted id="song">
+      <source src="music/main_sound.mp3" />
+    </audio>
+
+    <div id="app" class="background-image">
+      <div class="container-title">
+        <img src="img/Buon 6_ Mesiversary.png" alt="text" class="text" />
+        <img src="img/disney.png" alt="disney" class="disney" />
+        <img src="img/logo2.png" alt="logo" class="logo" />
+      </div>
+
+      <div class="first-choice container" v-if="showChoice()">
+        <div
+          v-for="(choice, index) in arrfirstChoice"
+          :key="choice.id"
+          class="image"
+          @click="newChoice(index)"
+        >
+          <img
+            :src="choice.image"
+            alt=""
+            class="img-choice"
+            @mouseover="playEffect"
+          />
+          <img src="img/FF8Cursor2.png" alt="" class="cursor" />
+        </div>
+      </div>
+      <div class="second-choice container-two" v-if="show == true">
+        <h2 class="gradient-text">Are you REALLY sure?</h2>
+        <div class="choice-final" @click="finalChoice">
+          <img src="img/FF8Cursor.png" alt="" class="cursor-two" />
+          <h3 @mouseover="playEffect" @click="playEffectTwo">Yes</h3>
+        </div>
+        <div class="choice-final" @click="reset">
+          <img src="img/FF8Cursor.png" alt="" class="cursor-two" />
+          <h3 @mouseover="playEffect" @click="playEffectTwo">No</h3>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
