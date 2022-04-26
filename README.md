@@ -20,6 +20,8 @@ Mobile Version is not supported, but it will soon be.
 
 ## Credits
 
+Julia Oliver: https://juliaolivier.com/kingdom-hearts-iii/
+
 Due to copyright, all  Credits goes to  **SQUARE ENIX** for the tools, images and fonts used.
 
 This is not for sale or for commercial purposes.
