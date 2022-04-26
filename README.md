@@ -14,6 +14,8 @@ Using <b>Mozilla Browser</b> for the best experience. <b>Chrome</b> is supported
 
 Remember to allow the <b>Autoplay</b> since it blocks the audios. If you have experience with Autoplay or know how to fix these problems,  please let me know.
 
+Mobile Versione is not supported, but it will soon be.
+
 <br/>
 
 ---
