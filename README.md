@@ -8,17 +8,18 @@ https://aleballabio.github.io/kh-project/
 
 <br/>
 
-<h3>WARNING!</h3>
+## WARNING!
 
-Using <b>Mozilla Browser</b> for the best experience. <b>Chrome</b> is supported, but it has problems with the autoplay feature.
+Using **Mozilla Browser** for the best experience. **Chrome** is supported, but it has problems with the autoplay feature.
 
-Remember to allow the <b>Autoplay</b> since it blocks the audios. If you have experience with Autoplay or know how to fix these problems,  please let me know.
+Remember to allow the **Autoplay** since it blocks the audios. If you have experience with Autoplay or know how to fix these problems,  please let me know.
 
-Mobile Versione is not supported, but it will soon be.
+Mobile Version is not supported, but it will soon be.
 
 <br/>
 
----
-Due to copyright, all  Credits goes to  <b>SQUARE ENIX 2022</b> for the tools, images and fonts used.
+## Credits
+
+Due to copyright, all  Credits goes to  **SQUARE ENIX** for the tools, images and fonts used.
 
 This is not for sale or for commercial purposes.
